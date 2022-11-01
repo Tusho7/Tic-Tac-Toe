@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+        <title>Tic-Tac-Toe</title>
+    </head>
+    <body>
+        <div class="main-container" id="main-container">
+            <div class="header">
+                <header>
+                    <div class="logo">
+                        <img class="header-logo" alt="logo" src="./assets/logo.svg"/>
+                    </div>
+                </header>
+            </div>
+
+            <div class="pick-player">
+                <p class="text">PICK PLAYER 1’S MARK</p>
+                <div class="choose">
+                    <div class="x-div" id="x-div">
+                        <img class="x-logo" id="x-logo" alt="x-logo" src="./assets/icon-x.svg"/>
+                    </div>
+
+                    <div class="o-div" id="o-div">
+                        <img class="o-logo" alt="o-logo" src="./assets/icon-o.svg" />
+                    </div>
+                </div>
+                <p class="second-text">REMEMBER : X GOES FIRST</p>
+            </div>
+
+            <div class="buttons">
+
+            <div class="new-game-vs-cpu" id="new-game-vs-cpu">
+                <button id="cpu">NEW GAME (VS CPU)</button>
+            </div>
+
+            <div class="new-game-vs-player" id="new-game-vs-player">
+                <button id="player">NEW GAME  (VS PLAYER)</button>
+            </div>
+
+            </div>
+        </div>
+
+        <div class="game-start" id="game-start">
+            <div class="game-start-header">
+                <header class="game-start-header-items">
+                    <div class="header-game-start-logo">
+                    <img class="game-start-logo" alt="logo" src="./assets/logo.svg"/>
+                        </div>
+                    <div class="turn-div" id="turn-div">
+                        <img class="x" alt="x-logo" src="./assets/icon-x.svg" id="iconturnx"/>
+                        <img class="o" alt="o-logo" src="./assets/icon-o.svg" id="iconturno" />
+                        <p class="turn-text">TURN</p>
+                    </div>
+
+                    <div class="restart-container" id="restart-container">
+                        <img class="restart-logo" alt="restart-logo" src="./assets/icon-restart.svg" />
+                    </div>
+
+                </header>
+            </div>
+
+            <div class="game-start-buttons" id="game-start-buttons">
+                <button class="button x-o-button" id="0">
+                    
+                </button>
+                <button class="button x-o-button" id="1">
+                  
+                </button>
+                <button class="button x-o-button" id="2">
+                    
+                </button>
+                <button class="button x-o-button" id="3">
+                    
+                </button>
+                <button class="button x-o-button" id="4">
+                   
+                </button>
+                <button class="button x-o-button" id="5">
+                    
+                </button>
+                <button class="button x-o-button" id="6">
+                   
+                </button>
+                <button class="button x-o-button" id="7">
+                  
+                </button>
+                <button class="button x-o-button" id="8">
+                 
+                </button>
+            </div>
+
+            <div class="scores">
+                <button class="x-button">
+                    <p class="x-button-text" id="x-button-score-text">X (YOU)</p>
+                    <p class="x-button-score" id="x-button-score">0</p>
+                </button>
+                <button class="ties-button">
+                    <p class="ties-button-text">TIES</p>
+                    <p class="ties-button-score" id="ties-button-score">0</p>
+                </button>
+                <button class="o-button">
+                    <p class="o-button-text" id="o-button-score-text">O (CPU)</p>
+                    <p class="o-button-score" id="o-button-score">0</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="modal" id="modal">
+            </div>
+            <div class="first-box" id="first-box">
+                <p id="modal-first-text"></p>
+                <div class="image-and-text">
+                    <img class="modal-first-img" src="./assets/icon-o.svg" id="modal-first-img"/>
+                    <img class="modal-second-img" src="./assets/icon-x.svg" id="modal-second-img"/>
+                    <p class="modal-second-text" id="modal-second-text">TAKES THE ROUND</p>
+                </div>
+
+                <div class="quit-and-next-round">
+                    <button id="quit">QUIT</button>
+                    <button id="next-round">NEXT ROUND</button>
+                </div>
+            </div>
+
+            <div class="restart-game-box" id="restart-game-box">
+                <p class="restart-game">RESTART GAME ?</p>
+
+                <div class="no-yes-buttons">
+                    <button id="no-restart">NO, CANCEL</button>
+                    <button id="yes-restart">YES, RESTART</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="script.js"></script>
+</html>
